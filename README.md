@@ -1,6 +1,56 @@
 # Decorative_Desktop_Clock
 A decorative desktop clock .exe application created with Python programming language
 
+The code:
+
+```
+import tkinter as tk
+from PIL import ImageTk, Image
+from datetime import datetime
+
+class DecoratedClock(tk.Frame):
+    def __init__(self, master=None, image_path=None, **kwargs):
+        super().__init__(master, **kwargs)
+        self.image_path = image_path
+        self.load_image()
+        self.create_clock_label()
+        self.update_clock()
+
+    def load_image(self):
+        try:
+            # Load the image file
+            image = Image.open(self.image_path)
+            image = image.resize((400, 400))  # Resize the image if necessary
+            self.photo = ImageTk.PhotoImage(image)
+
+            # Create a label with the image as the background
+            self.image_label = tk.Label(self, image=self.photo)
+            self.image_label.pack()
+
+        except Exception as e:
+            print("Error loading image:", str(e))
+
+    def create_clock_label(self):
+        self.clock_label = tk.Label(self, font=("Arial", 42), bg="#b0ae85", foreground="maroon")
+        self.clock_label.place(relx=0.5, rely=0.51, anchor="center")
+     
+        
+    def update_clock(self):
+        current_time = datetime.now().strftime("%H:%M:%S")  # Get current time
+        self.clock_label.config(text=current_time)  # Update the clock label
+        self.after(1000, self.update_clock)  # Schedule the next update after 1 second (1000 milliseconds)
+
+root = tk.Tk()
+root.title("Decorated Clock")
+
+image_path = "C:/Users/syriu/arnouveau_frame.png"
+clock = DecoratedClock(root, image_path=image_path)
+clock.pack()
+
+root.mainloop()
+```
+
+
 This Python code utilizes the libraries **tkinter**, **PIL** (Pillow), and **datetime** to create a graphical window containing a decorated clock with a background image. Here's a detailed description of the code:
 
 - The necessary libraries are imported: **tkinter** for creating the graphical interface, **PIL** for loading and manipulating images, and datetime for getting the current time.
