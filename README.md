@@ -94,7 +94,7 @@ This code is a command-line instruction using the **PyInstaller** tool to create
 So, running this command with **PyInstaller** will create a single standalone executable **.exe** file for the specified Python script, including an additional image file and an icon file if provided. The resulting **.exe** file can be run on a compatible system without the need for Python or any external dependencies.
 
 <div align="center">
-  <img src="https://github.com/Praemuntiacus/Decorative_Desktop_Clock/raw/main/desktop%20clock%20view.png" alt="Desktop Clock View" width="400px">
+  <img src="https://github.com/Praemuntiacus/Decorative_Desktop_Clock/raw/main/desktop%20clock%20view.png" alt="Desktop Clock View" width="300px">
 </div>
 
 
