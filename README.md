@@ -26,6 +26,7 @@ This Python code utilizes the libraries **tkinter**, **PIL** (Pillow), and **dat
 - So, this code creates a graphical window with a decorated clock displaying the current time. The clock uses a background image specified by the **image_path**. The time is updated every second. Finally, I created the desktop clock **.exe** file with the following code:
 
 '''
+
 !pyinstaller --onefile --noconsole --add-binary "C:/path/to/file/arnouveau_frame.png;." --icon=2_clock_icon_bright.ico Desktop_ArtNouveau_Clock.py
 
 '''
