@@ -53,7 +53,7 @@ root.mainloop()
 
 This Python code utilizes the libraries **tkinter**, **PIL** (Pillow), and **datetime** to create a graphical window containing a decorated clock with a background image. Here's a detailed description of the code:
 
-- The necessary libraries are imported: **tkinter** for creating the graphical interface, **PIL** for loading and manipulating images, and datetime for getting the current time.
+- The necessary libraries are imported: **tkinter** for creating the graphical interface, **PIL** for loading and manipulating images, and **datetime** for getting the current time.
 
 - A class named **DecoratedClock** is defined as a subclass of **tk.Frame**. This class represents the decorated clock.
 
