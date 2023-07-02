@@ -81,7 +81,19 @@ This Python code utilizes the libraries **tkinter**, **PIL** (Pillow), and **dat
 
 ```
 
-**Note**: Due to the presence of an embedded image, the generated desktop clock .exe file may trigger security measures on other PCs where I attempted to run the application.
+
+This code is a command-line instruction using the **PyInstaller** tool to create a standalone executable file for a Python program called **"Desktop_ArtNouveau_Clock.py"**.
+
+- **!pyinstaller**: This is the command to invoke **PyInstaller**, which is a tool used to package Python programs into standalone executables. **"!"** is necessary if you work in Jupyter Notebook.
+- **--onefile**: This option specifies that the output should be a single executable file (**.exe**), as opposed to a collection of separate files.
+- **--noconsole**: This option indicates that the resulting executable should not open a console or command prompt window when executed.
+- **--add-binary "C:/path/to/file/arnouveau_frame.png;."**: This option specifies that an additional binary file should be included in the executable. In this case, it adds the image file *"arnouveau_frame.png"* located at *"C:/path/to/file/"* to the executable. The semicolon (;) separates the source and destination paths, and the dot (.) indicates that the file should be placed in the same directory as the executable.
+- **--icon=2_clock_icon_bright.ico**: This option sets the icon for the resulting executable. It specifies the file *"2_clock_icon_bright.ico"* as the icon file to be used. You can convert  any image file to **.ico** format online
+- **Desktop_ArtNouveau_Clock.py**: This is the Python script file that I packaged into the executable. The name of your file may be different.
+
+So, running this command with **PyInstaller** will create a single standalone executable **.exe** file for the specified Python script, including an additional image file and an icon file if provided. The resulting **.exe** file can be run on a compatible system without the need for Python or any external dependencies.
+
+**Note**: Due to the presence of an embedded image, the generated desktop clock **.exe** file may trigger security measures on other PCs where I attempted to run the application.
 
 
 
