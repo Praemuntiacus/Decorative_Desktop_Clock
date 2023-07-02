@@ -93,8 +93,9 @@ This code is a command-line instruction using the **PyInstaller** tool to create
 
 So, running this command with **PyInstaller** will create a single standalone executable **.exe** file for the specified Python script, including an additional image file and an icon file if provided. The resulting **.exe** file can be run on a compatible system without the need for Python or any external dependencies.
 
-[![Desktop Clock View](https://github.com/Praemuntiacus/Decorative_Desktop_Clock/raw/main/desktop%20clock%20view.png)](https://github.com/Praemuntiacus/Decorative_Desktop_Clock/blob/main/desktop%20clock%20view.png)
-
+<div align="center">
+  <img src="https://github.com/Praemuntiacus/Decorative_Desktop_Clock/raw/main/desktop%20clock%20view.png" alt="Desktop Clock View" width="400px">
+</div>
 
 
 **Note**: Due to the presence of an embedded image, the generated desktop clock **.exe** file may trigger security measures on other PCs where I attempted to run the application.
