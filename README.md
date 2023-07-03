@@ -1,5 +1,5 @@
 # Decorative_Desktop_Clock
-A decorative desktop clock .exe application created with Python programming language
+A decorative [desktop clock](https://github.com/Praemuntiacus/Decorative_Desktop_Clock/blob/main/TKINTER%20decorative.ipynb) .exe application created with Python programming language.
 
 The code:
 
